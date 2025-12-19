@@ -3,7 +3,6 @@ const { generateQuestions, evaluateAnswer, generateQuiz } = require('../services
 const Quiz = require('../models/Quiz');
 
 const startInterview = async (req, res) => {
-  console.log("Starting interview with data:", req.body);
   try {
     const { role, count } = req.body;
 
@@ -69,7 +68,6 @@ const submitAnswer = async (req, res) => {
 
 // 1. Create and Save a new Quiz
 const createQuiz = async (req, res) => {
-    console.log("Creating quiz with data:", req.body);
     try {
         const { topic, count } = req.body;
         const generatedQuestions = await generateQuiz(topic, count);
@@ -96,7 +94,7 @@ const createQuiz = async (req, res) => {
 // 2. Submit Final Answers & Calculate Score
 const submitQuiz = async (req, res) => {
     try {
-        const { quizId, answers } = req.body; // 'answers' is an array of indices
+        const { quizId, answers } = req.body; 
         const quiz = await Quiz.findById(quizId);
 
         let finalScore = 0;
