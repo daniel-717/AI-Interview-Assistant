@@ -3,7 +3,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Loader2, Send, FastForward, CheckCircle, RefreshCcw, Star } from 'lucide-react';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://ai-interview-assistant-r0ww.onrender.com/api';
 
 const InterviewRoom = () => {
     const [setup, setSetup] = useState({ role: '', count: 5 });

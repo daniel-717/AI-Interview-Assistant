@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Settings, Zap, Sparkles } from 'lucide-react';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://ai-interview-assistant-r0ww.onrender.com/api';
 const QuizSetup = () => {
   const [topic, setTopic] = useState("");
   const [count, setCount] = useState(5);

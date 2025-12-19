@@ -4,7 +4,7 @@ import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, ArrowRight, HelpCircle, Loader2 } from 'lucide-react';
 
-const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://ai-interview-assistant-r0ww.onrender.com/api';
 
 const QuizRoom = () => {
   const location = useLocation();
